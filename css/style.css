@@ -1,0 +1,569 @@
+@import url('https://fonts.googleapis.com/css2?family=Metrophobic&family=Nanum+Gothic&family=Playfair&family=Architects+Daughter&family=Architects+Daughter&family=Shadows+Into+Light+Two&family=El+Messiri&El+Messiri&family=Yatra+One&display=swap');
+:root{
+  --one-color: #E8505B;
+  --two-color: #F9D56E;
+  --three-color: #F3ECC2;
+  --four-color: #14B1AB;
+  --fiex-color:#F2F2D2;
+  --six-color:#95A37A;
+  --text1-color: #666;
+  --text2-co1or: #7a7a7a;
+  --text3-color: #f1f1f1;
+  --text4-color: #653faa;
+  --wh-color:rgb(255, 255, 255);
+  --bk-color: #3c3c3c;
+  --bg1-color:#FBF1C8;
+  --bg2-color:#fcfcfc;
+  font-family: 'Playfair Display', serif;/*딱딱*/
+  font-family: 'Metrophobic', sans-serif;/*메뉴바*/
+  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Architects Daughter', cur8sive;
+  font-family: 'El Messiri', sans-serif;/*특이한*/
+  font-family: 'Yatra One', cursive;/*형광펜느낌*/
+}
+*{margin: 0; padding: 0;}
+  ul{list-style: none;}
+  a{text-decoration: none; color: inherit;}
+  body{font-family:'Metrophobic','Nanum Gothic'};
+  h1,h2,h3,h4,h5,h6{
+    letter-spacing: 2px;
+    line-height: 1.4;;
+  }
+ 
+  hr{border: 1px solid #eee;}
+    
+.top{
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 1;
+}
+.navbar{
+  width: 100%;
+  padding: 8px 16px;
+  color: var(--text1-color);
+  letter-spacing: 4px;
+  background-color: var(--wh-color);
+  box-shadow: 0px 2px 5px rgba(85, 85, 85, 0.2);
+  box-sizing: border-box;
+  font-weight: bold;
+  overflow: hidden;
+  transition:all 0.3s cubic-bezier(.03,.84,.43,.97);
+}
+.navbar .home{
+  padding: 4px 10px;
+  box-sizing: border-box;
+  float: left;
+  width: auto;
+  border: none;
+  font-size: 16px;
+  font-family: 'Architects Daughter', cur8sive;
+  color: var(--bk-color);
+  letter-spacing: 0;
+  transition:all 0.3s cubic-bezier(.03,.84,.43,.97);
+}
+.navbar .right{
+  float: right;
+  margin-top: 14px;
+  align-items: center;
+  font-family: 'Metrophobic', sans-serif;
+  font-size: 13px;
+  color: var(--bk-color);
+  transition:all 0.3s cubic-bezier(.03,.84,.43,.97);
+}
+.navbar .right a{
+  padding: 4px 16px;
+  float: left;
+  width: auto;
+  border: none;
+  transition:all 0.3s cubic-bezier(.03,.84,.43,.97);
+}
+.navbar i{
+  position: absolute;
+  right: 32px;
+  top: 30px;
+  font-size: 30px;
+  color: var(--text1-color);
+  display: none;
+  cursor: pointer;
+
+ }
+/*header에 on클래스가 추가됬을때 변경될 속성*/
+.top.on .navbar{ padding:16px; }
+.top.on .navbar .home{ font-size:18px; }
+.top.on .right a{ font-size:18px; }
+/*nav END*/
+.wrap{
+  width: 100%;
+}
+.wrap > section{
+  width: 100%;
+  height: 100vh;
+}
+
+.contents{
+  max-width: 1100px;
+  margin: auto;
+}
+.contents h1{
+  text-align: center;
+  margin: 10px 0px 35px;
+  font-size: 36px;
+  color: var(--one-color);
+}
+.contents h3{
+  text-align: center;
+  margin: 10px 0px 35px;
+  font-size: 22px;
+}
+#home{
+  max-width: 1600px;
+  margin: auto;
+  position: relative;
+
+}
+#home > div {
+  width: 49.9999;
+  padding: 12px 24px;
+  box-sizing: border-box;
+}
+#home > img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+#home > .title{
+  position: relative;
+  left: 0;
+  bottom: 200px;
+  text-align: center;
+  color: var(--text2-co1or);
+  font-weight: bold;
+}
+#home > .title h1 > span{
+  color: var(--bk-color);
+}
+#home > .icon{
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  bottom: 220px;
+  
+}
+
+#home > .title > h1{
+  opacity: 0.9;
+  font-size: 20px;
+  margin: 10px;
+  padding: 6px 24px;
+  letter-spacing: 2px;
+  font-family: 'Nanum Gothic', sans-serif;
+  }
+#home > .title > p{
+  opacity: 0.8;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 10px;
+  padding: 6px 24px;
+  position: relative;
+  left: 50%;
+  bottom: 10px;
+  transform: translate(-50%);
+}
+#home > .icon i{
+  font-size: 20px;
+  position: relative;
+  left: 0%;
+  bottom: 20%;
+  transform: translate(-50%);
+  margin-left: 20px;
+}
+#home > .icon i:nth-child(1){
+  color: rgb(209, 91, 22);
+}
+#home > .icon i:nth-child(2){
+  color: rgb(30, 56, 202);
+}
+#home > .icon i:nth-child(3){
+  color: rgb(228, 179, 19);
+}
+#home > .icon img{
+  font-size: 50px;
+  position: relative;
+  left: 0%;
+  bottom: 13%;
+  transform: translate(-50%);
+  margin-left: 20px;
+}
+#profle{
+  padding: 64px 16px;
+  overflow: hidden;
+  }
+#profle > div {
+  width: 49.9999%;
+  padding: 12px 24px;
+  float: right;
+  box-sizing: border-box;
+  text-align: center;
+}
+#profle > .image > img{
+  opacity: 0.8;
+  border-radius: 4px;
+  height: auto;
+  width: 100%;
+  height: auto;
+}
+
+#profle > .txt > h5{
+  text-align: center;
+  margin: 20px 0px;
+  font-size: 18px;
+  color: var(--one-color);
+  letter-spacing: 2px;     width: 100%;
+  height: auto;
+}
+#profle > .txt > p{
+  font-size: 15px;
+  margin: 10px 0px;
+  line-height: 1.5;
+  text-align: center;
+ }
+ #profle > .txt > .ro1{
+   width: 22%;
+   margin:auto;
+   padding: 20px;
+   border-bottom: 2px dashed rgb(165, 165, 165);
+ }
+#profle span{
+  color: var(--bk-color);
+  font-size: 15px;
+  display: inline-block;
+  padding: 0px 0px;
+}
+#profle > .txt > .gray{
+  color: #757575;
+  margin: 20px 0px;
+}
+
+
+#portfplio{
+  padding: 60px 10px;
+  overflow: hidden;
+}
+#portfplio > div{
+  width: 49.9999%;
+  padding: 12px 24px;
+  float: right;
+  box-sizing: border-box;
+}
+#portfplio > .txt > h1{
+  color: var(--four-color);
+}
+#portfplio > .txt  h4{
+  margin: 10px 0px;
+  font-size: 20px;
+  color: var(--text1-color);
+  text-align: center;
+}
+#portfplio > .txt > p{
+  color: #757575;
+  text-align: center;
+}
+#portfplio> .image > img{
+  width: 100%; 
+  height: auto; 
+  border-radius: 4px;}
+
+#portfolio{
+  column-count:2;/*몇개의 칼럼으로 나눌것인지 지정*/
+  column-gap:2px;/*칼럼과 칼럼 사이의 넓이(여백) 지정*/
+}
+
+/*썸네일 이미지에 마우스를 올려놨을때 이미지의 크기가 커졌다 작아지는 애니메이션 효과*/
+.scale-cont:hover{
+  animation:scale 1.5s ease-in-out;
+}
+@keyframes scale{
+  0%{transform:scale(1);}
+  50%{transform:scale(1.05);}
+  100%{transform:scale(1);}
+}
+.scale-cont img{/*썸네일 이미지의 크기를 폼에 맞춰주는 코드*/
+  width:100%; height:auto;
+  display:block;
+  margin-bottom:5px;
+}
+
+
+
+#contact{
+  padding: 64px 16px;
+  overflow: hidden;
+}
+#contact > div {
+  width: 49.9999%;
+  padding: 0px 24px;
+  box-sizing: border-box;
+  text-align: center;
+  margin: auto;
+}
+
+#contact > .txt {
+  padding: 0;
+}
+#contact > .txt > h1{
+  color: var(--two-color);
+}
+#contact > .txt > p{
+  font-size: 15px;
+  margin: 20px 0px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--text1-color);
+ }
+ 
+
+
+footer{
+  color: #111;
+  background-color: #f1f1f1;
+  padding: 32px 0px;
+}
+footer > p{
+  text-align: center;
+  color: #757575;
+}
+footer > p > a{
+  text-decoration: underline;
+  background-color: #ffffc4;
+}
+.btntop i {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 20px;
+  padding: 5px 8px;
+  background-color: white;
+  color: #A19882;
+  border-radius: 50%;
+  cursor: pointer;
+  text-align: center;
+}
+.btntop i:hover {
+  background-color: #A19882;
+  color: white;
+}
+
+
+@media screen and (max-width:992px) and (min-window:601pxd){
+  #home > .txt > .gray{display: none;}
+  #home > .title{display: none;}
+  #home >  img{display: none;}
+
+}
+@media screen and (max-width:992px){
+  #profle > div{
+    width: 100%;
+  }
+  #profle > .image > img{
+    width: 100%;
+    text-align: center; 
+  }
+  #portfplio > div{
+    width: 100%;
+  }
+  #portfolio{
+    column-count:2;/*몇개의 칼럼으로 나눌것인지 지정*/
+  }
+  #home{
+    width: 100%;
+  }
+  #home > div{
+    width: 100%;
+  }
+  #home >  img{
+    width: 100%;
+    height: 50%;
+  }
+  #home > .title{
+    left: -5px;
+    bottom: 170px;
+    text-align: right;
+  }
+  #home > .icon{
+    text-align: right;
+    padding-right: 50px;
+    bottom: 200px;
+  }
+  #home > .title h1{
+    font-size: 15px;
+
+  }
+  #home > .title p{
+    font-size: 10px;
+  }
+  #home > .icon i{
+    margin: 2px;
+  }
+  #home > .icon img{
+    margin: 2px;
+    margin-bottom:-2px ;
+  }
+}
+@media screen and (max-width:600px){
+
+  .navbar .right {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    display: none;
+
+  }
+  .navbar .right a{
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+    font-size: 14px;
+    padding: 20px 0px;
+  }
+  .navbar .right a:hover{
+  color: var(--six-color);
+  }
+ 
+
+  .navbar i{
+    display: inherit;
+    font-size: 20px;
+    float: right;
+  }
+  .navbar i:hover{
+   color: var(--six-color);
+  }
+  .navbar .right.active{
+    display: flex;
+  }
+  #home > img{display: none;}
+  #home > .txt{width: 100%;}
+  footer > p{font-size: 12px;}
+  #portfplio > .txt p,
+  #portfplio > .txt h4{
+    display: none;
+  }
+  #portfolio{
+    column-count:2;/*몇개의 칼럼으로 나눌것인지 지정*/
+  }
+  #profle > .image > img{
+    width: 100%;
+    text-align: center; 
+  } 
+
+#home > div {
+  width: 100%;
+}
+#home > img{
+  width: 100%;
+  height: 100%;
+  background: url(../img/idea2.png) no-repeat;
+  padding-top: 0px;
+  box-sizing: border-box;
+  background-size: contain;
+  margin: auto;
+  display: block;
+}
+#home > .title{
+  position: relative;
+  left: 0%;
+  bottom: 240px;
+  transform: translateY(50%);
+  text-align: right;
+  padding: 0;
+}
+#home > .title p{
+  letter-spacing: 0;
+}
+#home > .icon{
+  width: 100%;
+  margin: auto;
+ text-align: right;
+  bottom: 230px;
+  padding-right: 40px;
+
+}
+
+}
+@media screen and (max-width:400px){
+
+ 
+  .navbar .right {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    display: none;
+
+  }
+  .navbar .right a{
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+    font-size: 10px;
+    padding: 10px 0px;
+  }
+  .navbar .right a:hover{
+  color: var(--six-color);
+  }
+ 
+
+  .navbar i{
+   display: inherit;
+    font-size: 20px;
+    float: right;
+  }
+  .navbar i:hover{
+   color: var(--six-color);
+  }
+  .navbar .right.active{
+    display: flex;
+  }
+  #home > div {
+    width: 100%; 
+  }
+  #home > .title{
+
+    left: -4%;
+    bottom: 260px;
+    transform: translateY(50%);    
+    padding: 0;
+  }
+  #home > .title p{
+    letter-spacing: 0;
+    bottom: 15px;
+  }
+  #home > .icon{
+  bottom: 260PX
+  
+}
+  #home > .icon i{
+    margin: 4px;
+  }
+  #home > .icon img{
+    margin: 4px;
+    margin-bottom:-2px ;
+  }
+  #profle > .image > img{
+    width: 100%;
+    text-align: center; 
+  }
+  #profle > div{
+    width: 100%;
+  }
+  #contact > div {
+    width: 100%;
+    padding: 0px 24px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: auto;
+  }
+}
